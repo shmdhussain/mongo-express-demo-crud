@@ -1,0 +1,45 @@
+<ul class="quotes">
+    <% for(var i=0; i<quotes.length; i++) {%>
+        <li class="quote">
+            <span><%= quotes[i].name %></span>
+            <span><%= quotes[i].quote %></span>
+        </li>
+        <% } %>
+</ul>
+<br>
+<br>
+<br>
+<br>
+
+
+<form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+<div>
+  <h2>Replace last quote written by Hussain with a quote written by Ibrahim</h2>
+  <button id="update"> Hello ! </button>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div>
+  <h2>Delete Hussain's first quote</h2>
+  <button id="delete"> Delete first Hussain quote </button>
+</div>
+
+<script src="main.js"></script>
